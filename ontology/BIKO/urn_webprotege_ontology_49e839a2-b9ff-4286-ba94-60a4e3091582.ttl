@@ -1,0 +1,782 @@
+@prefix : <urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582> .
+
+<urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+<http://www.geneontology.org/formats/oboInOwl#creation_date> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000006
+<https://www.bikotbi.org/ontology/BIKO_000006> rdf:type owl:AnnotationProperty ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:47:19.279591Z"^^xsd:string ;
+                                               rdfs:label "definition_source" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/IAO_0000119> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000008
+<https://www.bikotbi.org/ontology/BIKO_000008> rdf:type owl:AnnotationProperty ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:14:46.010957Z"^^xsd:string ;
+                                               rdfs:label "SynonymTypeProperty" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000009
+<https://www.bikotbi.org/ontology/BIKO_000009> rdf:type owl:AnnotationProperty ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:19:49.496304Z"^^xsd:string ;
+                                               rdfs:label "synonym" ;
+                                               rdfs:subPropertyOf <https://www.bikotbi.org/ontology/BIKO_000008> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000010
+<https://www.bikotbi.org/ontology/BIKO_000010> rdf:type owl:AnnotationProperty ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:20:31.058934Z"^^xsd:string ;
+                                               rdfs:label "abbreviation" ;
+                                               rdfs:subPropertyOf <https://www.bikotbi.org/ontology/BIKO_000008> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.bikotbi.org/ontology/BIKO_000001
+<https://www.bikotbi.org/ontology/BIKO_000001> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000004> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:34:04.404818Z"^^xsd:string ;
+                                               rdfs:label "Anatomical entity" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/FMA_62955> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000002
+<https://www.bikotbi.org/ontology/BIKO_000002> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000052> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:34:21.00422Z"^^xsd:string ;
+                                               rdfs:label "attribute"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A characteristic of some entity."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://semanticscience.org/resource/SIO_000614.rdf> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000003
+<https://www.bikotbi.org/ontology/BIKO_000003> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000052> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:34:36.453487Z"^^xsd:string ;
+                                               rdfs:label "information content entity"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An object that requires some background knowledge or procedure to correctly interpret."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/IAO_0000030> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000004
+<https://www.bikotbi.org/ontology/BIKO_000004> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000052> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:34:54.323158Z"^^xsd:string ;
+                                               rdfs:label "material entity"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A material entity is a physical entity that is spatially extended, exists as a whole at any point in time and has mass."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://semanticscience.org/resource/SIO_000004> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000005
+<https://www.bikotbi.org/ontology/BIKO_000005> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000052> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:35:11.362856Z"^^xsd:string ;
+                                               rdfs:label "process"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be identified from any instant of time in which it exists."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://semanticscience.org/resource/SIO_000006.rdf> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000007
+<https://www.bikotbi.org/ontology/BIKO_000007> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000005> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T18:57:39.376802Z"^^xsd:string ;
+                                               rdfs:label "injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Damage inflicted on the body as the direct or indirect result of an external force, with or without disruption of structural continuity."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/NCIT_C3671> ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000009> "trauma"^^xsd:string ,
+                                                                                              "wound"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000011
+<https://www.bikotbi.org/ontology/BIKO_000011> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000007> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:22:41.968915Z"^^xsd:string ;
+                                               rdfs:label "nervous system injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The process of causing damage to the nervous system"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://regenbase.org/ontology#RB_0000112> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000012
+<https://www.bikotbi.org/ontology/BIKO_000012> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000011> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:25:02.010837Z"^^xsd:string ;
+                                               rdfs:label "traumatic brain injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Damage to the brain resulting in altered function caused by a blow, jolt, or penetrating wound."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://regenbase.org/ontology#RB_0000160> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000013
+<https://www.bikotbi.org/ontology/BIKO_000013> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:26:10.463862Z"^^xsd:string ;
+                                               rdfs:label "primary brain injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The immediate impact of different mechanical insults to the brain"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.3389/fncel.2019.00528> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000014
+<https://www.bikotbi.org/ontology/BIKO_000014> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:26:29.946782Z"^^xsd:string ;
+                                               rdfs:label "secondary brain injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The biochemical, cellular and physiological events that occur during primary injury that often progress into delayed and prolonged secondary damages."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.3389/fncel.2019.00528> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000015
+<https://www.bikotbi.org/ontology/BIKO_000015> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:29:39.404112Z"^^xsd:string ;
+                                               rdfs:label "focal brain injury"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://en.wikipedia.org/wiki/Focal_and_diffuse_brain_injury#cite_note-LaPlaca07-3> ,
+                                                                                              "A focal traumatic injury results from direct mechanical forces (such as occur when the head strikes a windshield in a vehicle accident) and is usually associated with brain tissue damage visible to the naked eye."^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000016
+<https://www.bikotbi.org/ontology/BIKO_000016> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000012> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:30:38.006418Z"^^xsd:string ;
+                                               rdfs:label "diffuse brain injury"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Diffuse brain injury usually depends on inertial loadings as a result of rapid head rotational motions of the brain, resulting from unrestricted head movement in the instant of injury."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.1016/B978-1-4160-6839-6.10133-9> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000017
+<https://www.bikotbi.org/ontology/BIKO_000017> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000005> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:34:02.903006Z"^^xsd:string ;
+                                               rdfs:label "Injury event" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An injury that happens at a given place and time."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25499> ,
+                                                                                              "Monique Surles-Zeigler"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000018
+<https://www.bikotbi.org/ontology/BIKO_000018> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:34:21.896271Z"^^xsd:string ;
+                                               rdfs:label "Barotrauma" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Physical damage to body tissues caused by a difference in pressure between a gas space inside, or in contact with, the body, and the surrounding gas or fluid."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://en.wikipedia.org/wiki/Barotrauma> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000019
+<https://www.bikotbi.org/ontology/BIKO_000019> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:34:39.030364Z"^^xsd:string ;
+                                               rdfs:label "Fluid pressure pulse" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000020
+<https://www.bikotbi.org/ontology/BIKO_000020> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:34:53.728575Z"^^xsd:string ;
+                                               rdfs:label "Gravity injury"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000021
+<https://www.bikotbi.org/ontology/BIKO_000021> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:35:33.665855Z"^^xsd:string ;
+                                               rdfs:label "Traumatic brain event" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000022
+<https://www.bikotbi.org/ontology/BIKO_000022> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000021> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:35:52.945369Z"^^xsd:string ;
+                                               rdfs:label "Controlled traumatic brain injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000023
+<https://www.bikotbi.org/ontology/BIKO_000023> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000021> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:36:02.331198Z"^^xsd:string ;
+                                               rdfs:label "Uncontrolled traumatic brain injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000024
+<https://www.bikotbi.org/ontology/BIKO_000024> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:36:28.24021Z"^^xsd:string ;
+                                               rdfs:label "Blast exposure model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000025
+<https://www.bikotbi.org/ontology/BIKO_000025> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:36:45.57616Z"^^xsd:string ;
+                                               rdfs:label "Controlled cortical impact injury model" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Model that uses a pneumatic or electromagnetic impact device to drive a rigid impactor onto the exposed intact dura, and mimics cortical tissue loss, acute subdural hematoma, axonal injury, concussion, blood–brain barrier (BBB) dysfunction and even coma"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.1038/nrn3407> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000026
+<https://www.bikotbi.org/ontology/BIKO_000026> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:37:01.609349Z"^^xsd:string ;
+                                               rdfs:label "Fluid percussion injury model" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An insult inflicted by a pendulum striking the piston of a reservoir of fluid to generate a fluid pressure pulse to the intact dura through a craniotomy, which is made either centrally around the midline, or laterally over the parietal bone, between bregma and lambda."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.1038/nrn3407> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000027
+<https://www.bikotbi.org/ontology/BIKO_000027> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:37:25.80839Z"^^xsd:string ;
+                                               rdfs:label "Weight drop model" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A model that consists of dropping a projectile of specified characteristics through a tube at a specified height onto the head of the animal"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://doi.org/10.1089/neu.2018.6127> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000028
+<https://www.bikotbi.org/ontology/BIKO_000028> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000004> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-30T22:48:23.39838Z"^^xsd:string ;
+                                               rdfs:label "Preclinical traumatic brain injury model"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000029
+<https://www.bikotbi.org/ontology/BIKO_000029> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000026> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:37:01.609349Z"^^xsd:dateTime ;
+                                               rdfs:label "Lateral fluid percussion injury model"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000030
+<https://www.bikotbi.org/ontology/BIKO_000030> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000026> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-29T19:37:01.609349Z"^^xsd:dateTime ;
+                                               rdfs:label "Middle fluid percussion injury model"^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000031
+<https://www.bikotbi.org/ontology/BIKO_000031> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-09-30T23:00:02.337473Z"^^xsd:string ;
+                                               rdfs:label "Penetrating ballistic-like brain injury model" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Transmission of projectiles with high energy and leading shockwave. Produces temporary cavity in the brain many times larger than the projectile."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://doi.org/10.1089/neu.2021.0094> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000032
+<https://www.bikotbi.org/ontology/BIKO_000032> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000024> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:01:36.765542Z"^^xsd:string ;
+                                               rdfs:label "Primary blast injury model" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Uses compression-driven shock tube or open-field low-intensity blast. Produces non-penetrating supersonic blast-wave loading impulse to simulate mild-to-severe blast effects"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://doi.org/10.1089/neu.2021.0094> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000033
+<https://www.bikotbi.org/ontology/BIKO_000033> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000027> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:06:33.253933Z"^^xsd:string ;
+                                               rdfs:label "Feeney's weight drop model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000034
+<https://www.bikotbi.org/ontology/BIKO_000034> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000033> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:06:48.058915Z"^^xsd:string ;
+                                               rdfs:label "Marmarou's weight drop model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000035
+<https://www.bikotbi.org/ontology/BIKO_000035> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000027> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:07:01.922959Z"^^xsd:string ;
+                                               rdfs:label "Maryland's weight drop model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000036
+<https://www.bikotbi.org/ontology/BIKO_000036> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000027> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:07:35.193584Z"^^xsd:string ;
+                                               rdfs:label "Shohami's weight drop model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000037
+<https://www.bikotbi.org/ontology/BIKO_000037> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:09:10.686879Z"^^xsd:string ;
+                                               rdfs:label "Pressure wave injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000038
+<https://www.bikotbi.org/ontology/BIKO_000038> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:10:23.882686Z"^^xsd:string ;
+                                               rdfs:label "Shock wave injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000039
+<https://www.bikotbi.org/ontology/BIKO_000039> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000017> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:10:47.669973Z"^^xsd:string ;
+                                               rdfs:label "Blast injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000040
+<https://www.bikotbi.org/ontology/BIKO_000040> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000005> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:11:25.71868Z"^^xsd:string ;
+                                               rdfs:label "Injury measurement process" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000041
+<https://www.bikotbi.org/ontology/BIKO_000041> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000040> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:11:55.096768Z"^^xsd:string ;
+                                               rdfs:label "Blood test" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000042
+<https://www.bikotbi.org/ontology/BIKO_000042> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000040> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:12:06.646456Z"^^xsd:string ;
+                                               rdfs:label "Brain injury severity score" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000043
+<https://www.bikotbi.org/ontology/BIKO_000043> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000040> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:12:19.111072Z"^^xsd:string ;
+                                               rdfs:label "Imaging test" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000044
+<https://www.bikotbi.org/ontology/BIKO_000044> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000040> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:12:44.64524Z"^^xsd:string ;
+                                               rdfs:label "Neurological assessment" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000045
+<https://www.bikotbi.org/ontology/BIKO_000045> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000040> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:12:54.698276Z"^^xsd:string ;
+                                               rdfs:label "Physiological assessment" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000046
+<https://www.bikotbi.org/ontology/BIKO_000046> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000041> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:13:06.960666Z"^^xsd:string ;
+                                               rdfs:label "Banyan Brain Trauma Indicator (BTI)" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000047
+<https://www.bikotbi.org/ontology/BIKO_000047> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000042> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:13:18.634114Z"^^xsd:string ;
+                                               rdfs:label "Severe traumatic brain injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000048
+<https://www.bikotbi.org/ontology/BIKO_000048> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000042> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:13:34.798398Z"^^xsd:string ;
+                                               rdfs:label "Mild traumatic brain injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000049
+<https://www.bikotbi.org/ontology/BIKO_000049> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000042> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:13:50.493316Z"^^xsd:string ;
+                                               rdfs:label "Moderate traumatic brain injury" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000050
+<https://www.bikotbi.org/ontology/BIKO_000050> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000043> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:14:02.744174Z"^^xsd:string ;
+                                               rdfs:label "Computed Tomography" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000051
+<https://www.bikotbi.org/ontology/BIKO_000051> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000043> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:14:14.164227Z"^^xsd:string ;
+                                               rdfs:label "Magnetic Resonance Imaging" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000052
+<https://www.bikotbi.org/ontology/BIKO_000052> rdf:type owl:Class ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:16:47.47994Z"^^xsd:string ;
+                                               rdfs:label "Brain Injury Knowledge Ontology"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> "Monique Surles-Zeigler"^^xsd:string ,
+                                                                                              "The brain injury knowledge ontology is a standardized ontology to define and connect experimental design parameters (methods) and outcome measures used in preclinical and clinical therapy studies."^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000053
+<https://www.bikotbi.org/ontology/BIKO_000053> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000026> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:58:14.25086Z"^^xsd:string ;
+                                               rdfs:label "Parasagittal percussion injury model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000054
+<https://www.bikotbi.org/ontology/BIKO_000054> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000028> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T16:58:33.094763Z"^^xsd:string ;
+                                               rdfs:label "Repeated mild traumatic brain injury model" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000055
+<https://www.bikotbi.org/ontology/BIKO_000055> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000001> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:46:07.306332Z"^^xsd:string ;
+                                               rdfs:label "Nervous system" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The nervous system is an organ system containing predominantly neuron and glial cells. In bilaterally symmetrical organism, it is arranged in a network of tree-like structures connected to a central body. The main functions of the nervous system are to regulate and control body functions, and to receive sensory input, process this information, and generate behavior [CUMBO]."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/UBERON_0001016> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000056
+<https://www.bikotbi.org/ontology/BIKO_000056> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000002> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:47:39.519999Z"^^xsd:string ;
+                                               rdfs:label "organism attribute"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A characteristic or attribute inherent or inherited to an organism"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/NCIT_C171083> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000057
+<https://www.bikotbi.org/ontology/BIKO_000057> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000056> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:47:53.733091Z"^^xsd:string ;
+                                               rdfs:label "age"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism"^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://www.ebi.ac.uk/efo/EFO_0000246> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000058
+<https://www.bikotbi.org/ontology/BIKO_000058> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000056> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:48:05.334508Z"^^xsd:string ;
+                                               rdfs:label "sex"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://purl.obolibrary.org/obo/NCIT_C28421> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000059
+<https://www.bikotbi.org/ontology/BIKO_000059> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000056> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:48:16.265414Z"^^xsd:string ;
+                                               rdfs:label "Weight"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "The weight of a subject."^^xsd:string .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000060
+<https://www.bikotbi.org/ontology/BIKO_000060> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000056> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:49:27.697423Z"^^xsd:string ;
+                                               rdfs:label "Genetic variation" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000061
+<https://www.bikotbi.org/ontology/BIKO_000061> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000060> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:49:44.470168Z"^^xsd:string ;
+                                               rdfs:label "ethnicity"^^xsd:string ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "ethnicity is the biological quality of membership in a social group based on a common heritage."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <http://semanticscience.org/ontology/sio.owl> .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000062
+<https://www.bikotbi.org/ontology/BIKO_000062> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000060> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:49:57.282063Z"^^xsd:string ;
+                                               rdfs:label "Strain" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000063
+<https://www.bikotbi.org/ontology/BIKO_000063> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000062> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:50:12.815562Z"^^xsd:string ;
+                                               rdfs:label "Substrain" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000064
+<https://www.bikotbi.org/ontology/BIKO_000064> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000002> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:50:33.493029Z"^^xsd:string ;
+                                               rdfs:label "Quality" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000065
+<https://www.bikotbi.org/ontology/BIKO_000065> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000003> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:50:48.453426Z"^^xsd:string ;
+                                               rdfs:label "Data label" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000066
+<https://www.bikotbi.org/ontology/BIKO_000066> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000003> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:50:58.761226Z"^^xsd:string ;
+                                               rdfs:label "Data object" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000067
+<https://www.bikotbi.org/ontology/BIKO_000067> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000003> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:51:11.801921Z"^^xsd:string ;
+                                               rdfs:label "Directive information entity" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000068
+<https://www.bikotbi.org/ontology/BIKO_000068> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000055> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:52:06.489421Z"^^xsd:string ;
+                                               rdfs:label "Brain" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000069
+<https://www.bikotbi.org/ontology/BIKO_000069> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000004> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:52:29.14814Z"^^xsd:string ;
+                                               rdfs:label "Artifact object" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000070
+<https://www.bikotbi.org/ontology/BIKO_000070> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000072> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:52:39.974219Z"^^xsd:string ;
+                                               rdfs:label "Blast device" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000071
+<https://www.bikotbi.org/ontology/BIKO_000071> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000072> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:52:58.654245Z"^^xsd:string ;
+                                               rdfs:label "Controlled cortical impact device" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000072
+<https://www.bikotbi.org/ontology/BIKO_000072> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000069> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:53:36.85123Z"^^xsd:string ;
+                                               rdfs:label "Traumatic brain injury model device" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000073
+<https://www.bikotbi.org/ontology/BIKO_000073> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000005> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:54:07.082044Z"^^xsd:string ;
+                                               rdfs:label "Planned process" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000074
+<https://www.bikotbi.org/ontology/BIKO_000074> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000073> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:54:19.139965Z"^^xsd:string ;
+                                               rdfs:label "Experimental method" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000075
+<https://www.bikotbi.org/ontology/BIKO_000075> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000073> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:54:31.162358Z"^^xsd:string ;
+                                               rdfs:label "Therapy" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000076
+<https://www.bikotbi.org/ontology/BIKO_000076> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000075> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:54:45.775974Z"^^xsd:string ;
+                                               rdfs:label "Experimental therapy" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000077
+<https://www.bikotbi.org/ontology/BIKO_000077> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000076> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:54:58.02484Z"^^xsd:string ;
+                                               rdfs:label "Citicoline" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000078
+<https://www.bikotbi.org/ontology/BIKO_000078> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000076> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:55:09.896856Z"^^xsd:string ;
+                                               rdfs:label "Hypothermia" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000079
+<https://www.bikotbi.org/ontology/BIKO_000079> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000076> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:55:24.329912Z"^^xsd:string ;
+                                               rdfs:label "Progesterone" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000080
+<https://www.bikotbi.org/ontology/BIKO_000080> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000074> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:55:44.929341Z"^^xsd:string ;
+                                               rdfs:label "Analytical method" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000081
+<https://www.bikotbi.org/ontology/BIKO_000081> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000080> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:55:55.272758Z"^^xsd:string ;
+                                               rdfs:label "Assay" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000082
+<https://www.bikotbi.org/ontology/BIKO_000082> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000080> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:56:08.28947Z"^^xsd:string ;
+                                               rdfs:label "Chromatography" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000083
+<https://www.bikotbi.org/ontology/BIKO_000083> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000080> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:56:19.982215Z"^^xsd:string ;
+                                               rdfs:label "Immunoassay" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000084
+<https://www.bikotbi.org/ontology/BIKO_000084> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000080> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:56:31.153396Z"^^xsd:string ;
+                                               rdfs:label "Microscopy" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000085
+<https://www.bikotbi.org/ontology/BIKO_000085> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000080> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:56:41.897633Z"^^xsd:string ;
+                                               rdfs:label "Spectrometry" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000086
+<https://www.bikotbi.org/ontology/BIKO_000086> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000004> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-05T19:57:26.608424Z"^^xsd:string ;
+                                               rdfs:label "Organism" .
+
+
+###  https://www.bikotbi.org/ontology/BIKO_000087
+<https://www.bikotbi.org/ontology/BIKO_000087> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://www.bikotbi.org/ontology/BIKO_000005> ;
+                                               <http://www.geneontology.org/formats/oboInOwl#created_by> "MCSZ"^^xsd:string ;
+                                               <http://www.geneontology.org/formats/oboInOwl#creation_date> "2022-10-06T18:21:47.085481Z"^^xsd:string ;
+                                               rdfs:label "biological process" ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end."^^xsd:string ;
+                                               <https://www.bikotbi.org/ontology/BIKO_000006> <https://bioportal.bioontology.org/ontologies/RB/?p=classes&conceptid=http%3A%2F%2Fregenbase.org%2Fontology%23RB_0000353> .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
