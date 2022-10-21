@@ -1,4 +1,3 @@
-@prefix : <urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582#> .
 @prefix BIKO: <https://www.bikotbi.org/ontology/BIKO_> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
@@ -6,8 +5,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<urn:webprotege:ontology:49e839a2-b9ff-4286-ba94-60a4e3091582> a owl:Ontology .
 
 ### Object Properties
 
