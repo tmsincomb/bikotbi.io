@@ -4,8 +4,6 @@
 </p>
 
 
-Brain Injury Knowledge Ontology for Traumatic Brain Injury
-
 The Brain Injury Knowledge Ontology for traumatic brain injury (BIKO-TBI) is a project to uncover similarities and differences within and between preclinical and clinical translational traumatic brain injury (TBI) studies.
 
 - **BIKO** - the brain injury knowledge ontology - is an ontology for translation TBI studies. BIKO provides the schema for BIKObase, BIKOnet, and potentially other studies to computationally investigate TBI studies. 
