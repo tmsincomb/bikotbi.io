@@ -1137,8 +1137,6 @@ uri:BIKO_0000266 a owl:Class ;
     oboInOwl:creation_date "2022-09-07T05:13:33.947178Z"^^xsd:string ;
     rdfs:subClassOf uri:BIKO_0000014 .
 
-<urn:webprotege:ontology:f11172a8-959d-4250-be04-4c0bb15a4569> a owl:Ontology .
-
 uri:BIKO_0000024 a owl:Class ;
     rdfs:label "Strain" ;
     oboInOwl:created_by "MCSZ"^^xsd:string ;
